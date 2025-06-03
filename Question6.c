@@ -6,8 +6,8 @@ char uname[50];
 int pswd;
 void atmregister()
 {
-	printf("===== WELCOME TO UoK STUDENT ATM MACHINE ===== \n");
-	printf(" UoK ATM MACHINE Registration Form  \n ");
+	printf("===== ATM MACHINE ===== \n");
+	printf(" ATM MACHINE Registration Form  \n ");
 	printf("Enter Username: ");
 	scanf("%s",uname);
 	printf("Enter Pin: ");
@@ -21,8 +21,8 @@ void atmlogin()
 	int success=0;
 	while(!success)
 	{
-	printf("===== WELCOME TO UoK STUDENT ATM MACHINE ===== \n");
-	printf("  UoK ATM MACHINE Login Form  \n ");
+	printf("===== WELCOME TO  ATM MACHINE ===== \n");
+	printf("  ATM MACHINE Login Form  \n ");
 	printf("Enter Username: ");
 	scanf("%s",name);
 	printf("Enter Pin: ");
@@ -42,15 +42,15 @@ void atmlogin()
 }
 void checkbalance()
 {
-	printf("===== WELCOME TO UoK STUDENT ATM \n");
+	printf("===== WELCOME TO ATM MACHINE ==== \n");
 	printf("Your Balance is %.2f\n",balance);
 }
 void deposit()
 {
 	float deposit;
 	int done=0;
-	printf("===== WELCOME TO UoK STUDENT ATM MACHINE ===== \n");
-	printf("  Uok ATM DEPOSIT  \n");
+	printf("===== WELCOME ATM MACHINE ===== \n");
+	printf("  ATM DEPOSIT  \n");
 	while(!done)
 	{
 	
@@ -73,8 +73,8 @@ void withdrawal()
 	float amount;
 	int pass;
 	int done=0;
-	printf("===== WELCOME TO UoK STUDENT ATM MACHINE ===== \n");
-	printf("  Uok ATM WITHDRAW  \n");
+	printf("===== WELCOME TO ATM MACHINE ===== \n");
+	printf("   ATM WITHDRAW  \n");
 	while(!done)
 	{
 	
@@ -112,14 +112,14 @@ int main() {
 	atmregister();
 	atmlogin();
 	do{
-	printf("===== WELCOME TO UoK STUDENT ATM MACHINE ===== \n");
+	printf("===== WELCOME TO ATM MACHINE ===== \n");
     printf("Enter \n 0.Exit \n 1.Check Balance \n 2.Deposit Money \n 3.Withdraw Money \n Choose: ");
     scanf("%d",&choice);
     	
     switch(choice)
     {
     	case 0:
-    		printf("Thank you for using UoK ATM Machine");
+    		printf("Thank you for using ATM Machine");
     	break;
 		case 1:
     		checkbalance();
